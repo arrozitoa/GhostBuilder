@@ -210,7 +210,7 @@ def pick_other_payloads() -> None:
     print('[2]  java/meterpreter/reverse_tcp')
     print('[3]  php/meterpreter_reverse_tcp')
     print('[4]  java/jsp_shell_reverse_tcp')
-    print('[5]  asp/meterpreter/reverse_tcp')
+    print('[5]  windows/asp/reverse_tcp')
     print('[6]  python/shell_reverse_tcp')
     print('[7]  ruby/shell_reverse_tcp')
     print('[8]  unix/shell_reverse_tcp')
@@ -219,6 +219,7 @@ def pick_other_payloads() -> None:
     print('[11] cmd/unix/reverse_bash')
     print('[12] go/meterpreter/reverse_tcp')
     print('[13] java/jsp_shell_bind_tcp')
+    print('[14] windows/asp/bind_tcp')
 
     p = ask("choose: ").strip()
 
@@ -227,7 +228,7 @@ def pick_other_payloads() -> None:
         '2': 'java_meterpreter_reverse_tcp',
         '3': 'php_meterpreter_reverse_tcp',
         '4': 'jsp_shell_reverse_tcp',
-        '5': 'asp_meterpreter_reverse_tcp',
+        '5': 'windows_asp_reverse_tcp',
         '6': 'python_shell_reverse_tcp',
         '7': 'ruby_shell_reverse_tcp',
         '8': 'unix_shell_reverse_tcp',
@@ -235,7 +236,8 @@ def pick_other_payloads() -> None:
         '10': 'perl_reverse_tcp',
         '11': 'bash_reverse_tcp',
         '12': 'go_meterpreter_reverse_tcp',
-        '13': 'jsp_shell_bind_tcp'
+        '13': 'jsp_shell_bind_tcp',
+        '14': 'windows_asp_bind_tcp'
     }
 
     if p in mapping:
