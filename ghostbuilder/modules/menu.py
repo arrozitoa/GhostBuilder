@@ -36,7 +36,7 @@ def main_loop() -> None:
         print('[5] macOS payload')
         print('[6] iOS payload')
         print('[7] Re-check dependencies')
-        print('[8] Other payloads (PowerShell, Unix, Python, PHP, Ruby, Java, ASP, JSP, Go, Perl, NodeJS, Bash)')
+        print('[8] Other payloads (PowerShell, Unix, Python, PHP, Ruby, Java, ASPX, JSP, Go, Perl, NodeJS, Bash)')
         print('[9] Exit')
         sel = ask('Select: ').strip()
         if sel == '1':
@@ -316,7 +316,7 @@ def simple_flow(kind: str) -> None:
             "  PowerShell: .ps1\n"
             "  Java: .jar\n"
             "  JSP: .jsp\n"
-            "  ASP: .asp\n"
+            "  ASPX: .aspx\n"
             "\n"
             "Raw payloads (extension optional, but recommended):\n"
             "  PHP: .php\n"
