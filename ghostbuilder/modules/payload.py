@@ -45,7 +45,7 @@ MAP = {
     'windows_powershell_reverse_tcp': 'windows/powershell_reverse_tcp',
     'java_meterpreter_reverse_tcp': 'java/meterpreter/reverse_tcp',
     'php_meterpreter_reverse_tcp': 'php/meterpreter_reverse_tcp',
-    'jsp_shell_reverse_tcp': 'jsp/shell_reverse_tcp',
+    'jsp_shell_reverse_tcp': 'java/jsp_shell_reverse_tcp',
     'asp_meterpreter_reverse_tcp': 'asp/meterpreter/reverse_tcp',
     'python_shell_reverse_tcp': 'python/shell_reverse_tcp',
     'ruby_shell_reverse_tcp': 'ruby/shell_reverse_tcp',
