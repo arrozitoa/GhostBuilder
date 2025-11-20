@@ -209,14 +209,18 @@ def pick_ios_payload() -> None:
 def pick_other_payloads() -> None:
     clear()
     show()
-    print('[1] windows/powershell_reverse_tcp')
-    print('[2] java/meterpreter/reverse_tcp')
-    print('[3] php/meterpreter_reverse_tcp')
-    print('[4] jsp/meterpreter/reverse_tcp')
-    print('[5] asp/meterpreter/reverse_tcp')
-    print('[6] python/shell_reverse_tcp')
-    print('[7] ruby/shell_reverse_tcp')
-    print('[8] unix/shell_reverse_tcp')
+    print('[1]  windows/powershell_reverse_tcp')
+    print('[2]  java/meterpreter/reverse_tcp')
+    print('[3]  php/meterpreter_reverse_tcp')
+    print('[4]  jsp/meterpreter/reverse_tcp')
+    print('[5]  asp/meterpreter/reverse_tcp')
+    print('[6]  python/shell_reverse_tcp')
+    print('[7]  ruby/shell_reverse_tcp')
+    print('[8]  unix/shell_reverse_tcp')
+    print('[9]  nodejs/shell_reverse_tcp')
+    print('[10] cmd/unix/reverse_perl')
+    print('[11] cmd/unix/reverse_bash')
+    print('[12] go/meterpreter/reverse_tcp')
 
     p = ask("choose: ").strip()
 
@@ -228,7 +232,11 @@ def pick_other_payloads() -> None:
         '5': 'asp_meterpreter_reverse_tcp',
         '6': 'python_shell_reverse_tcp',
         '7': 'ruby_shell_reverse_tcp',
-        '8': 'unix_shell_reverse_tcp'
+        '8': 'unix_shell_reverse_tcp',
+        '9': 'nodejs_shell_reverse_tcp',
+        '10': 'perl_reverse_tcp',
+        '11': 'bash_reverse_tcp',
+        '12': 'go_meterpreter_reverse_tcp'
     }
 
     if p in mapping:
