@@ -86,7 +86,6 @@ def pick_windows_payload() -> None:
     print('[6] windows/meterpreter/reverse_http')
     print('[7] windows/x64/meterpreter/reverse_tcp')
     print('[8] windows/x64/meterpreter/reverse_https')
-    print('[9] windows/x64/meterpreter/reverse_http')
     p = ask('choose: ').strip()
     if p == '1':
        simple_flow('windows_reverse_tcp')
@@ -104,8 +103,6 @@ def pick_windows_payload() -> None:
         simple_flow('windows_x64_meterpreter_reverse_tcp')
     elif p == '8':
         simple_flow('windows_x64_meterpreter_reverse_https')
-    elif p == '9':
-        simple_flow('windows_x64_meterpreter_reverse_http')
     else:
          warn('Invalid choice.')
 
