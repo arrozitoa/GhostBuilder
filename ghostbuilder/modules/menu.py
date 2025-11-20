@@ -222,6 +222,9 @@ def pick_other_payloads() -> None:
     print('[14] windows/meterpreter/reverse_https (ASPX)')
     print('[15] windows/x64/meterpreter/reverse_tcp (ASPX)')
     print('[16] windows/x64/meterpreter/reverse_https (ASPX)')
+    print('[17] java/meterpreter/reverse_http')
+    print('[18] java/meterpreter/reverse_https')
+    print('[19] java/meterpreter/bind_tcp')
 
     p = ask("choose: ").strip()
 
@@ -241,7 +244,10 @@ def pick_other_payloads() -> None:
         '13': 'windows_aspx_reverse_http',
         '14': 'windows_aspx_reverse_https',
         '15': 'windows_x64_aspx_reverse_tcp',
-        '16': 'windows_x64_aspx_reverse_https'
+        '16': 'windows_x64_aspx_reverse_https',
+        '17': 'java_meterpreter_reverse_http',
+        '18': 'java_meterpreter_reverse_https',
+        '19': 'java_meterpreter_bind_tcp
         
     }
 
