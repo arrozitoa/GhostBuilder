@@ -57,7 +57,10 @@ MAP = {
     'unix_shell_reverse_tcp': 'cmd/unix/reverse',
     'nodejs_shell_reverse_tcp': 'nodejs/shell_reverse_tcp',
     'perl_reverse_tcp': 'cmd/unix/reverse_perl',
-    'bash_reverse_tcp': 'cmd/unix/reverse_bash'
+    'bash_reverse_tcp': 'cmd/unix/reverse_bash',
+    'java_meterpreter_reverse_http': 'java/meterpreter/reverse_http',
+    'java_meterpreter_reverse_https': 'java/meterpreter/reverse_https',
+    'java_meterpreter_bind_tcp': 'java/meterpreter/bind_tcp'
 }
 
 FMT = {
@@ -112,9 +115,11 @@ FMT = {
     'unix_shell_reverse_tcp': 'raw',
     'nodejs_shell_reverse_tcp': 'raw',
     'perl_reverse_tcp': 'raw',
-    'bash_reverse_tcp': 'raw'
+    'bash_reverse_tcp': 'raw',
+    'java_meterpreter_reverse_http': 'jar',
+    'java_meterpreter_reverse_https': 'jar',
+    'java_meterpreter_bind_tcp': 'jar'
 }
-
 
 def build_cmd(key: str, lhost: str, lport: int, out: str, infile: Optional[str] = None) -> List[str]:
     payload = MAP.get(key)
