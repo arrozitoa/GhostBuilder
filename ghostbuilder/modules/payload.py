@@ -93,11 +93,11 @@ FMT = {
     'ios_armle_meterpreter_reverse_tcp': 'macho',
     'windows_powershell_reverse_tcp': 'ps1',
     'java_meterpreter_reverse_tcp': 'jar',
-    'php_meterpreter_reverse_tcp': 'php',
+    'php_meterpreter_reverse_tcp': 'raw',
     'jsp_meterpreter_reverse_tcp': 'jsp',
     'asp_meterpreter_reverse_tcp': 'asp',
-    'python_shell_reverse_tcp': 'python',
-    'ruby_shell_reverse_tcp': 'ruby',
+    'python_shell_reverse_tcp': 'raw',
+    'ruby_shell_reverse_tcp': 'raw',
     'unix_shell_reverse_tcp': 'elf'
 }
 
