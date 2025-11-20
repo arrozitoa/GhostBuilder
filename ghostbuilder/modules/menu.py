@@ -36,7 +36,8 @@ def main_loop() -> None:
         print('[5] macOS payload')
         print('[6] iOS payload')
         print('[7] Re-check dependencies')
-        print('[8] Exit')
+        print('[8] Other payloads (PowerShell, Python, PHP, Java, ASP, JSP)')
+        print('[9] Exit')
         sel = ask('Select: ').strip()
         if sel == '1':
             android_normal()
@@ -54,6 +55,8 @@ def main_loop() -> None:
             basic = check_required()
             android = check_android_tools()
         elif sel == '8':
+            pick_other_payloads()
+        elif sel == '9':
             info('Exiting')
             time.sleep(0.3)
             break
@@ -193,6 +196,36 @@ def pick_ios_payload() -> None:
         simple_flow('ios_armle_meterpreter_reverse_tcp')
     else:
         warn('Invalid choice')
+
+def pick_other_payloads() -> None:
+    clear()
+    show()
+    print('[1] windows/powershell_reverse_tcp')
+    print('[2] java/meterpreter/reverse_tcp')
+    print('[3] php/meterpreter_reverse_tcp')
+    print('[4] jsp/meterpreter/reverse_tcp')
+    print('[5] asp/meterpreter/reverse_tcp')
+    print('[6] python/shell_reverse_tcp')
+    print('[7] ruby/shell_reverse_tcp')
+    print('[8] unix/shell_reverse_tcp')
+
+    p = ask("choose: ").strip()
+
+    mapping = {
+        '1': 'windows_powershell_reverse_tcp',
+        '2': 'java_meterpreter_reverse_tcp',
+        '3': 'php_meterpreter_reverse_tcp',
+        '4': 'jsp_meterpreter_reverse_tcp',
+        '5': 'asp_meterpreter_reverse_tcp',
+        '6': 'python_shell_reverse_tcp',
+        '7': 'ruby_shell_reverse_tcp',
+        '8': 'unix_shell_reverse_tcp'
+    }
+
+    if p in mapping:
+        simple_flow(mapping[p])
+    else:
+        warn('Invalid option')
 
 def android_normal() -> None:
     clear()
