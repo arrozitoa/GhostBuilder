@@ -54,7 +54,7 @@ MAP = {
     'windows_x64_aspx_reverse_https':'windows/x64/meterpreter/reverse_https',
     'python_shell_reverse_tcp': 'python/shell_reverse_tcp',
     'ruby_shell_reverse_tcp': 'ruby/shell_reverse_tcp',
-    'unix_shell_reverse_tcp': 'unix/shell_reverse_tcp',
+    'unix_shell_reverse_tcp': 'cmd/unix/reverse',
     'nodejs_shell_reverse_tcp': 'nodejs/shell_reverse_tcp',
     'perl_reverse_tcp': 'cmd/unix/reverse_perl',
     'bash_reverse_tcp': 'cmd/unix/reverse_bash'
@@ -109,7 +109,7 @@ FMT = {
     'windows_x64_aspx_reverse_https': 'aspx',
     'python_shell_reverse_tcp': 'raw',
     'ruby_shell_reverse_tcp': 'raw',
-    'unix_shell_reverse_tcp': 'elf',
+    'unix_shell_reverse_tcp': 'raw',
     'nodejs_shell_reverse_tcp': 'raw',
     'perl_reverse_tcp': 'raw',
     'bash_reverse_tcp': 'raw'
