@@ -36,7 +36,7 @@ def main_loop() -> None:
         print('[5] macOS payload')
         print('[6] iOS payload')
         print('[7] Re-check dependencies')
-        print('[8] Other payloads (PowerShell, UNIX, Python, PHP, Ruby, Java, ASP, JSP, GO, Perl, Nodejs, Bash)')
+        print('[8] Other payloads (PowerShell, Unix, Python, PHP, Ruby, Java, ASP, JSP, Go, Perl, NodeJS, Bash)')
         print('[9] Exit')
         sel = ask('Select: ').strip()
         if sel == '1':
