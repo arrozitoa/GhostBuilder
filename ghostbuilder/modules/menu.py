@@ -298,6 +298,27 @@ def simple_flow(kind: str) -> None:
     if not validate_port(lport):
         fail('Invalid port')
         return
-    out = ask('Output filename [example:/path/to/payloadname.extension] (Extensions:- linux:.elf, windows:.exe, macOS/iOS:.macho): ').strip()
+    out = ask(
+            "Output filename [example: /path/to/payloadname.ext]\n"
+            "\n"
+            "Supported extensions:\n"
+            "  Windows: .exe\n"
+            "  Linux/Unix: .elf (includes Go payloads)\n"
+            "  macOS/iOS: .macho\n"
+            "  PowerShell: .ps1\n"
+            "  Java: .jar\n"
+            "  JSP: .jsp\n"
+            "  ASP: .asp\n"
+            "\n"
+            "Raw payloads (extension optional, but recommended):\n"
+            "  PHP: .php\n"
+            "  Python: .py\n"
+            "  Ruby: .rb\n"
+            "  Perl: .pl\n"
+            "  Bash: .sh\n"
+            "  NodeJS: .js\n"
+            "\n"
+            "Enter output file: "
+          ).strip()
     dry = ask('Dry run? (y/N): ').strip().lower() == 'y'
     generate(kind, lhost, int(lport), out, dry=dry)
