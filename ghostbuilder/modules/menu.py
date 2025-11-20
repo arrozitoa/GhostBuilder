@@ -209,7 +209,7 @@ def pick_other_payloads() -> None:
     print('[1]  windows/powershell_reverse_tcp')
     print('[2]  java/meterpreter/reverse_tcp')
     print('[3]  php/meterpreter_reverse_tcp')
-    print('[4]  jsp/shell_reverse_tcp')
+    print('[4]  java/jsp_shell_reverse_tcp')
     print('[5]  asp/meterpreter/reverse_tcp')
     print('[6]  python/shell_reverse_tcp')
     print('[7]  ruby/shell_reverse_tcp')
